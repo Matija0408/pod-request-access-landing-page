@@ -3,36 +3,177 @@ body{
   padding: 0;
   box-sizing: border-box;
   background: rgb(48, 48, 48);
+  font-family:'Chivo', sans-serif;
 }
 
-.wrapper{
-   display: flex;
-   flex-flow: column;
-   background: rgba(18, 23, 37, 1);
-   width: 100%;
-   height: 100vh;
-   align-items: center;
+.gray-font{
+  color: gray;
 }
 
+.black-font{
+  color: black;
+}
+
+.white-font{
+  color: white;
+}
 .container{
-  display: flex;
-  flex-flow: column;
-  border: 1px solid greenyellow;
-  max-width: 80%;
-  margin: 15rem auto 0 auto;
-}
-/* REDESIGN INTO FLEXBOX */
-.color-palette{
   display: grid;
-  grid-template-columns: repeat(4, 23%);
+  grid-template-columns: 100%;
   grid-template-rows: auto;
-  row-gap: 2rem;
-  justify-content: space-between;
+  width: 100%;
+  background: rgba(18, 23, 37, 1);
+  justify-items: center;
 }
 
-.color-box{
-  background: #54E6AF;
-  width: 100%;
+.colors-box{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 13rem auto 0 auto;
+  max-width: 50%;
+  margin-bottom: 2rem;
+}
+
+.box{
+  width: 13rem;
+  height: 9rem;
+  margin: 5px;
+  /* background: chartreuse; */
   border-radius: 10px;
   border: none;
+}
+
+.color-box-container{
+  margin: 1rem;
+}
+
+p > b{
+  font-weight: 400;
+}
+
+.box1{
+  background: #54E6AF;
+}
+
+.box2{
+  background: #2C344B;
+}
+
+.box3{
+  background: #121725;
+  border: 1px solid rgba(128, 128, 128, 0.205);
+}
+
+.box4{
+  background: #FFFFFF;
+}
+
+.box5{
+  background: #5A668A;
+}
+
+.box6{
+  background: #C2CBE5;
+}
+
+.middle-section{
+  position: relative;
+  z-index: 1;
+  width: 50%;
+  /* border:2px solid greenyellow; */
+}
+
+.alphabet{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  color: white;
+}
+
+.alphabet-header{
+  width: 50%;
+  font-size: 8.5em;
+
+}
+h1  {
+  margin: 0 2px;
+}
+.alphabet-para{
+  width: 100%;
+  background: rgba(255, 255, 255, 0);
+  display: flex;
+  justify-content: flex-end;
+  font-weight: 300;
+  font-size: 1.3rem;
+  letter-spacing: 4px;
+  line-height: 28px;
+}
+
+.alphabet-para-p{
+  margin: 0;
+}
+
+.alphabet-caps{
+  font-weight: 700;
+}
+
+.description{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.part1{
+  width:50%;
+}
+
+.part2{
+  width: 50%;
+}
+
+div h2 {
+  font-size: 2.4rem;
+  font-weight: 300;
+  line-height: 35px;
+  letter-spacing: 2px;
+}
+
+.lorem-text{
+  line-height: 25px;
+}
+
+.image-background{
+  background: url(starter-code/assets/desktop/image-host2.jpg)center center no-repeat;
+  width: 100%;
+  height: 20%;
+  position: absolute;
+  top: 0;
+}
+
+.pod{
+  font-size: 35px;
+}
+
+.designSystem{
+  font-weight: 300;
+  font-size: 1.6rem;
+  /* margin: 0 0 0 10rem; */
+}
+
+.logo{
+  /* width: 5%; */
+  /* margin: 0 0 0 10rem; */
+}
+
+.logoPara{
+  /* width: 50%; */
+}
+
+.imageForeground{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
 }

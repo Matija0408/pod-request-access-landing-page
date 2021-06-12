@@ -18,6 +18,10 @@ body{
   color: white;
 }
 
+.redFont {
+  color: rgb(196, 40, 40);
+}
+
 .thinFont{
   font-family: 'Chivo',sans-serif;
   font-weight: 300;
@@ -72,9 +76,8 @@ body{
 .colors-box{
   display: flex;
   flex-wrap: wrap;
-  margin: 13rem auto 0 auto;
-  max-width: 50%;
-  margin-bottom: 2rem;
+  margin: 13rem auto 2rem auto;
+  max-width: 65%; 
 }
 
 .box{
@@ -116,6 +119,89 @@ p > b{
 
 .box6{
   background: #C2CBE5;
+}
+
+.middle-section{
+  max-width: 65%;
+}
+
+.alphabet{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  color: white;
+}
+
+.alphabet-header{
+  width: 50%;
+  font-size: 8.5em;
+
+}
+h1  {
+  margin: 0 2px;
+}
+.alphabet-para{
+  width: 100%;
+  background: rgba(255, 255, 255, 0);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-weight: 300;
+  font-size: 1.3rem;
+  letter-spacing: 4px;
+  line-height: 28px;
+}
+
+.alphabet-para-p{
+  margin: 0;
+}
+
+.alphabet-caps{
+  font-weight: 700;
+}
+
+.description{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.part1{
+  width:50%;
+}
+
+.part2{
+  width: 50%;
+}
+
+.login{
+  width: 65%;
+  margin-top: 7rem;
+}
+
+input{
+  display: block;
+  color: white;
+  background: rgba(44, 52, 75, 1);
+  border: none;
+  border-radius: 25px;
+  padding: 1.3em;
+  min-width: 350px;
+}
+
+
+
+button{
+  border: none;
+  border-radius: 25px;
+  padding: 1em;
+  background: #54e6af;
+  cursor: pointer;
+  margin-top: 3em;
+}
+
+button:hover{
+  background: #b3FFE2;
 }
 
 /* .headerImage {

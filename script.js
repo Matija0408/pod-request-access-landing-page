@@ -18,3 +18,11 @@ function ValidateEmail(inputText) {
 // TESTING ARROW FUNCTIONS
 let sum = (a, b) => a + b;
 console.log(sum(2, 3));
+
+let isPositive = (number) => number >= 0;
+console.log(isPositive(3));
+
+let ranNum = () => Math.random();
+console.log(ranNum());
+
+document.addEventListener("click", () => console.log("click"));

@@ -3,26 +3,42 @@
 //variable to validate the input value against
 
 //function to do the input check against set parameters
-function ValidateEmail(inputText) {
-  var mailformat = /^w+([.-]?w+)*@w+([.-]?w+)*(.w{2,3})+$/;
-  if (inputText.value.match(mailformat)) {
-    alert("You have entered a valid email address!"); //The pop up alert for a valid email address
-    document.form1.text1.focus();
+document.getElementById("btn").addEventListener("click", function (event) {
+  event.preventDefault();
+});
+
+function validateEmail() {
+  let mail = document.getElementById("email").value;
+
+  let pattern = /^([a-zA-Z0-9\._]+)@([a-zA-Z0-9])+.([a-z]+)(.[a-z]+)?$/;
+
+  if (pattern.test(mail)) {
+    let colorChange = document.getElementById("noteColor");
+    colorChange.classList.remove("redFont");
+    colorChange.classList.add("greenFont");
+    // colorChange.className += "greenFont";
+    return (document.getElementById("emailFieldNotification").innerHTML =
+      "Email address is valid.");
+  } else {
+    return (document.getElementById("emailFieldNotification").innerHTML =
+      "Please enter a valid email address!");
+  }
+}
+
+// Use this >>>> /^([a-zA-Z0-9\._]+)@([a-zA-Z0-9])+.([a-z]+)(.[a-z]+)?$/;
+
+function validate() {
+  let mail = document.getElementById("email").value;
+
+  let pattern = /^([a-zA-Z0-9\._]+)@([a-zA-Z0-9])+.([a-z]+)(.[a-z]+)?$/;
+
+  if (pattern.test(mail)) {
+    let emailNote = (document.getElementById("emailNote").innerHTML =
+      "Email valid");
     return true;
   } else {
-    alert("You have entered an invalid email address!"); //The pop up alert for an invalid email address
-    document.form1.text1.focus();
+    let emailNote = (document.getElementById("emailNote").innerHTML =
+      "Please enter valid email address");
     return false;
   }
 }
-// TESTING ARROW FUNCTIONS
-let sum = (a, b) => a + b;
-console.log(sum(2, 3));
-
-let isPositive = (number) => number >= 0;
-console.log(isPositive(3));
-
-let ranNum = () => Math.random();
-console.log(ranNum());
-
-document.addEventListener("click", () => console.log("click"));
